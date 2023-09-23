@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from rbs_mpc import rbs_mpc 
+from rbs_mpc_py.rbs_mpc import rbs_mpc
 from scipy import sparse
 
 if __name__ == "__main__":
@@ -76,5 +76,5 @@ if __name__ == "__main__":
     plt.xlabel(f'time')
     plt.legend([f'de', f'v_lat', f'Reference'])
     plt.title(f'q11 = {q11}, q22 = {q22}, r = {r}')
-    plt.savefig("../Media/mpc_test_lateral_model.png")
+    plt.savefig("./Media/mpc_test_lateral_model.png")
     plt.show()

@@ -1,4 +1,4 @@
-from rbs_mpc import rbs_mpc
+from rbs_mpc_py.rbs_mpc import rbs_mpc
 import numpy as np
 from scipy import sparse
 import matplotlib.pyplot as plt
@@ -63,5 +63,5 @@ if __name__ == "__main__":
 	plt.xlabel(f'tiempo')
 	plt.legend([f'd_lon', f'v_lon', f'a_lon', f'Reference'])
 	plt.title(f'Q = {Q.todense()} \n- R = {R.todense()}')
-	plt.savefig("../Media/mpc_test_long_model.png")
+	plt.savefig("./Media/mpc_test_long_model.png")
 	plt.show()

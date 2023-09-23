@@ -1,4 +1,6 @@
-from spline_module import *
+from rbs_spline_module.spline_module import Rbs2_ControlPose, n_spline, t_spline
+import numpy as np
+from math import pi, sqrt
 import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
@@ -86,5 +88,5 @@ if __name__ == "__main__":
   plt.grid()
 
   # Save graph and show it
-  plt.savefig("../Media/t-spline_representation.png")
+  plt.savefig("./Media/t-spline_representation.png")
   plt.show()
